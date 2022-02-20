@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mizutani_lab.groupcreater.viewcontroller.InputParametersController">
+   <children>
+      <Label layoutX="86.0" layoutY="66.0" text="グループの数またはメンバーの数を入力">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="groupRadioButton" layoutX="111.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#rbtnGroup_onClick" selected="true" text="グループの数：">
+      	<toggleGroup>
+				<ToggleGroup fx:id="toggle1" />
+			</toggleGroup>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="menberRadioButton" layoutX="111.0" layoutY="215.0" mnemonicParsing="false" onMouseClicked="#rbtnMenbeer_onClick" text="メンバーの数：" toggleGroup="$toggle1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="groupTextField" layoutX="271.0" layoutY="177.0" prefHeight="25.0" prefWidth="103.0" />
+      <TextField fx:id="menberTextField" layoutX="271.0" layoutY="214.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label layoutX="139.0" layoutY="258.0" text="性格検査の種類を選択">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+     <ComboBox fx:id="comboBox" layoutX="192.0" layoutY="291.0" onAction="#handleComboBoxAction">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+      <Button fx:id="createGroupButton" layoutX="184.0" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#btnStart_onClick" text="編成開始">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="gotoKnowledgeArea" layoutX="184.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#btn_knowledgeArea_onClick" text="データの重み設定" />
+      <Button fx:id="gotoDivide" layoutX="187.0" layoutY="388.0" mnemonicParsing="false" onMouseClicked="#btnDivide_onClick" text="役割の分割設定" />
+      <Label layoutX="87.0" layoutY="107.0" text="分析コメント">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="comment" layoutX="87.0" layoutY="126.0" prefHeight="25.0" prefWidth="293.0" />
+      <Label layoutX="164.0" layoutY="14.0" text="新規分析画面">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl" layoutX="166.0" layoutY="450.0" text="全ての項目を入力してください" />
+      <Button fx:id="saveButton" layoutX="374.0" layoutY="505.0" mnemonicParsing="false" onMouseClicked="#btnSave_onClick" text="データを保存" />
+      <Label fx:id="saveLbl" layoutX="359.0" layoutY="479.0" text="データが保存されました" />
+      <Button fx:id="showStudentBtn" layoutX="14.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#btnShowStudnet_onClick" text="学生情報を確認" />
+
+   </children>
+</AnchorPane>

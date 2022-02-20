@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="mizutani_lab.groupcreater.viewcontroller.ShowStudentController">
+   <children>
+      <Button fx:id="rbtn" layoutX="281.0" layoutY="396.0" mnemonicParsing="false" onMouseClicked="#btnRbtn_onClick" text="戻る" />
+      <TextArea fx:id="textArea" prefHeight="387.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>

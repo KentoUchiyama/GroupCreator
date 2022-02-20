@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="260.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mizutani_lab.groupcreater.viewcontroller.ShowHistoryController">
+   <children>
+      <Hyperlink layoutX="103.0" layoutY="68.0" text="10/23, 10:23, グループ数8, FFS, テスト" />
+      <Label layoutX="69.0" layoutY="102.0" prefHeight="17.0" prefWidth="0.0" />
+      <Label layoutX="94.0" layoutY="29.0" text="SampleProjectの編成結果履歴一覧">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="192.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#btnBack_onClick" text="戻る" />
+      <Button fx:id="saveButton" layoutX="323.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#btnSave_onClick" text="データを保存" />
+      <Label fx:id="saveLbl" layoutX="309.0" layoutY="183.0" text="データが保存されました" />
+   </children>
+</AnchorPane>

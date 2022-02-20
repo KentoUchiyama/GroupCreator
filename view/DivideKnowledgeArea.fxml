@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="520.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mizutani_lab.groupcreater.viewcontroller.DivideKnowledgeAreaController">
+   <children>
+      <ComboBox fx:id="comboBox" layoutX="250.0" layoutY="31.0" onMouseClicked="#handleComboBoxAction" prefHeight="25.0" prefWidth="82.0" />
+      <Label fx:id="lbl" layoutX="163.0" layoutY="29.0" text="役割の数:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table01" layoutX="102.0" layoutY="138.0" prefHeight="306.0" prefWidth="299.0">
+        <columns>
+          <TableColumn fx:id="kAreaCol" prefWidth="210.0" text="知識エリア" />
+          <TableColumn fx:id="groupCol" prefWidth="87.0" text="役割" />
+        </columns>
+      </TableView>
+      <Button fx:id="setGroupButton" layoutX="230.0" layoutY="469.0" mnemonicParsing="false" onMouseClicked="#btnsetGroup_onClick" text="確定">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="textminingResult" layoutX="116.0" layoutY="73.0" mnemonicParsing="false" onMouseClicked="#rbtnTextminingResult_onClick" text="PMBOKガイドをテキストマイニングした結果を使用する">
+      	<toggleGroup>
+				<ToggleGroup fx:id="group" />
+			</toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="selfSet" layoutX="116.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#rbtnSelfSet_onClick" text="最初から自分で設定する( 0 : 役割として使用しない)" toggleGroup="$group" />
+   </children>
+</AnchorPane>

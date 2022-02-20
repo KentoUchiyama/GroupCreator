@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="879.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mizutani_lab.groupcreater.viewcontroller.SetWeightPageController">
+   <children>
+      <ScrollPane prefHeight="879.0" prefWidth="923.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="874.0">
+               <children>
+                  <TableView fx:id="table1" layoutX="31.0" layoutY="59.0" prefHeight="242.0" prefWidth="793.0">
+                    <columns>
+                      <TableColumn fx:id="kArea01Col" prefWidth="122.0" text="知識エリア" />
+                      <TableColumn fx:id="ffsResult1Col" prefWidth="71.0" text="FFS(凝縮)" />
+                        <TableColumn fx:id="ffsResult2Col" prefWidth="66.0" text="FFS(受容)" />
+                        <TableColumn fx:id="ffsResult3Col" prefWidth="66.0" text="FFS(拡散)" />
+                        <TableColumn fx:id="ffsResult4Col" prefWidth="63.0" text="FFS(保全)" />
+                        <TableColumn fx:id="bigFiveResult1Col" prefWidth="82.0" text="BigFive(開放)" />
+                        <TableColumn fx:id="bigFiveResult2Col" prefWidth="81.0" text="BigFive(誠実)" />
+                        <TableColumn fx:id="bigFiveResult3Col" prefWidth="79.0" text="BigFive(外向)" />
+                        <TableColumn fx:id="bigFiveResult4Col" prefWidth="79.0" text="BigFive(調和)" />
+                        <TableColumn fx:id="bigFiveResult5Col" prefWidth="82.0" text="BigFive(神経)" />
+                    </columns>
+                  </TableView>
+                  <Label fx:id="lbl2" layoutX="225.0" layoutY="1.0" text="知識エリアごとにデータの重み(0～10)を設定してください">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="setWeightButton" layoutX="403.0" layoutY="845.0" mnemonicParsing="false" onMouseClicked="#btnSetWeight_onClick" text="確定">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="table2" layoutX="31.0" layoutY="331.0" prefHeight="242.0" prefWidth="843.0">
+                    <columns>
+                      <TableColumn fx:id="kArea02Col" prefWidth="118.0" text="知識エリア" />
+                      <TableColumn fx:id="integrationCol" prefWidth="63.0" text="統合" />
+                        <TableColumn fx:id="riskCol" prefWidth="71.0" text="リスク" />
+                        <TableColumn fx:id="scheduleCol" prefWidth="92.0" text="スケジュール" />
+                        <TableColumn fx:id="scopeCol" prefWidth="70.0" text="スコープ" />
+                        <TableColumn fx:id="qualityCol" prefWidth="67.0" text="品質" />
+                        <TableColumn fx:id="stakeholderCol" prefWidth="83.0" text="人的資源" />
+                        <TableColumn fx:id="costCol" prefWidth="58.0" text="コスト" />
+                        <TableColumn fx:id="procurementCol" prefWidth="53.0" text="調達" />
+                        <TableColumn fx:id="communicationCol" prefWidth="105.0" text="コミュニケーション" />
+                        <TableColumn fx:id="totalScoreCol" prefWidth="61.0" text="合計" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="table3" layoutX="31.0" layoutY="603.0" prefHeight="242.0" prefWidth="725.0">
+                    <columns>
+                      <TableColumn fx:id="kArea03Col" prefWidth="124.0" text="知識エリア" />
+                      <TableColumn fx:id="attendanceOfClass1Col" prefWidth="91.0" text="授業1の出席率" />
+                        <TableColumn fx:id="performanceOfClass01Col" prefWidth="92.0" text="授業1の成績" />
+                        <TableColumn fx:id="submissionRateOfClass01Col" prefWidth="112.0" text="授業1の課題提出率" />
+                        <TableColumn fx:id="attendanceOfClass2Col" prefWidth="97.0" text="授業2の出席率" />
+                        <TableColumn fx:id="performanceOfClass02Col" prefWidth="90.0" text="授業2の成績" />
+                        <TableColumn fx:id="submissionRateOfClass02Col" prefWidth="116.0" text="授業2の課題提出率" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="31.0" layoutY="29.0" text="性格検査の結果">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="301.0" text="知識エリアごとのPMテストの点数">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="573.0" text="授業に関するデータ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

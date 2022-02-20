@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+
+<AnchorPane prefHeight="376.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mizutani_lab.groupcreater.viewcontroller.CreateProjectController">
+   <children>
+      <Label layoutX="152.0" layoutY="30.0" text="新規スタディ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="93.0" text="スタディ名" />
+      <TextField fx:id="projectName" layoutX="104.0" layoutY="110.0" prefHeight="25.0" prefWidth="208.0" />
+      <Label layoutX="104.0" layoutY="159.0" text="分析対象データ" />
+      <Button fx:id="analysisFileDialog" layoutX="324.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#btnAnalysisFileDialog_onClick" text="参照" />
+      <Button fx:id="gotoInputParameters" layoutX="181.0" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#btn_Ok_onClick" text="完了">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="107.0" layoutY="225.0" text="ファイル保存先" />
+      <Button fx:id="saveAddressDialog" layoutX="324.0" layoutY="242.0" mnemonicParsing="false" onMouseClicked="#btnSaveAddressDialog_onClick" text="参照" />
+      <TextField fx:id="analysisFile" layoutX="104.0" layoutY="176.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextField fx:id="saveAddress" layoutX="107.0" layoutY="242.0" prefHeight="25.0" prefWidth="208.0" />
+      <Label fx:id="label" layoutX="138.0" layoutY="287.0" text="全ての項目を入力してください" />
+   </children>
+</AnchorPane>
