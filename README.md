@@ -1,8 +1,10 @@
 # GroupCreator
 Java8  JavaFX
+
 ・プロジェクト演習のグループ生成ツール
 ・性格分析を使用
 ・PMBOKの知識エリアをもとに役割を分担
+
 ![group1](https://user-images.githubusercontent.com/99701409/155055274-ee6e2966-b4e3-4862-8644-091519d13a3b.png)
 ![group2](https://user-images.githubusercontent.com/99701409/155055284-3690f153-72a3-4747-9e4d-a3932a5c95c1.png)
 ![group3](https://user-images.githubusercontent.com/99701409/155055288-5f0458ed-8fde-4592-81fb-b34d6dd3d9f2.png)
